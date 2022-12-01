@@ -1,6 +1,6 @@
 import os
 with open(os.path.join(os.path.dirname(__file__), "input.txt"), 'r') as f:
-  lines = [str(line) for line in f.read().splitlines()]
+  lines = f.read().splitlines()
 
 elvesCalories = []
 currentElfCalories = 0
