@@ -1,11 +1,9 @@
-import os
-with open(os.path.join(os.path.dirname(__file__), "input.txt"), 'r') as f:
-  lines = f.read().splitlines()
+input = open('input.txt').read().splitlines()
 
 elvesCalories = []
 currentElfCalories = 0
 
-for line in lines:
+for line in input:
   if line == "":
     elvesCalories.append(currentElfCalories)
     currentElfCalories = 0
